@@ -16,9 +16,11 @@ Tags: light, two-columns, responsive-layout, accessibility-ready
 
 
 .entry-header {
-    background-color: red;
+    background-color: red !important;
     padding: 20px;
     border-bottom: 1px solid #e9ecef;
+
+    position: unset !important;
 }
 
 .entry-content {
