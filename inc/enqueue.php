@@ -7,6 +7,8 @@ function hello_theme_enqueue_styles()
     wp_enqueue_style('owl-carousel', get_template_directory_uri() . '/assets/css/owl.css');
     wp_enqueue_style('lightbox', get_template_directory_uri() . '/assets/css/lightbox.css');
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
+    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('responsive', get_template_directory_uri() . '/assets/css/responsive.css');
 }
 add_action('wp_enqueue_scripts', 'hello_theme_enqueue_styles');
 
