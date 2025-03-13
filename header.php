@@ -36,7 +36,15 @@ https://templatemo.com/tm-569-edu-meeting
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
+                        <?php echo wp_nav_menu(array(
+                            'theme_location' => 'header_menu',
+                            'menu_class' => 'nav',
+                            'container' => '',
+                            'depth' => 3,
+                            'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                            'walker' => new WP_Bootstrap_Navwalker()
+                        )); ?>
+                        <!-- <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li><a href="meetings.html">Meetings</a></li>
                             <li class="scroll-to-section"><a href="#apply">Apply Now</a></li>
@@ -49,7 +57,7 @@ https://templatemo.com/tm-569-edu-meeting
                             </li>
                             <li class="scroll-to-section"><a href="#courses">Courses</a></li>
                             <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-                        </ul>
+                        </ul> -->
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
