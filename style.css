@@ -35,3 +35,25 @@ Tags: light, two-columns, responsive-layout, accessibility-ready
     border-top: 1px solid #e9ecef;
     text-align: center;
 }
+
+
+/* comments section */
+
+.comment-author.vcard img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.author-image img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.about-author {
+    background-color: #d5e2ee;
+    padding: 20px;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+}

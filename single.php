@@ -22,13 +22,23 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="card-footer text-muted mt-4">
+                        <div class="about-author text-muted mt-4">
                             <h5 class="card-subtitle mb-2 text-center">About the Author</h5>
                             <div class="author-image">
                                 <img src="<?php echo get_avatar_url(get_the_author_meta('ID'), ['size' => '64']); ?>" class="img-fluid rounded-circle" alt="<?php the_author(); ?>">
                             </div>
                             <span>Posted by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a> on <?php the_date(); ?></span>
                             <p><?php the_author_meta('description'); ?></p>
+                        </div>
+                        <div class="card-footer mt-4">
+                            <h5 class="card-subtitle mb-2 text-center">Comments</h5>
+                            <?php
+                            if (comments_open() || get_comments_number()) :
+                                comments_template();
+                            else :
+                                echo '<p class="text-center">Comments are closed.</p>';
+                            endif;
+                            ?>
                         </div>
                     </div>
                 <?php endwhile;
