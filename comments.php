@@ -49,12 +49,12 @@ if (post_password_required()) {
                 <h2 class="screen-reader-text"><?php _e('Comment navigation', 'helloTheme'); ?></h2>
                 <div class="nav-links">
                     <?php
-                    if ($prev_link = get_previous_comments_link(__('Older Comments', 'helloTheme'))) :
-                        printf('<div class="nav-previous">%s</div>', $prev_link);
+                    if ($prev_link = get_previous_comments_link(__('&larr; Older Comments', 'helloTheme'))) :
+                        printf('<div class="nav-previous">%s previous</div>', $prev_link);
                     endif;
 
-                    if ($next_link = get_next_comments_link(__('Newer Comments', 'helloTheme'))) :
-                        printf('<div class="nav-next">%s</div>', $next_link);
+                    if ($next_link = get_next_comments_link(__('Newer Comments &rarr;', 'helloTheme'))) :
+                        printf('<div class="nav-next">%s next</div>', $next_link);
                     endif;
                     ?>
                 </div><!-- .nav-links -->

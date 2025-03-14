@@ -48,4 +48,6 @@
         </div>
     </div>
 </div>
+
+<p class="pobi">here is the so</p>
 <?php get_footer(); ?>

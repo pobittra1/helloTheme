@@ -20,7 +20,7 @@ https://templatemo.com/tm-569-edu-meeting
 -->
 </head>
 
-<body>
+<body <?php body_class() ?>>
 
 
 
