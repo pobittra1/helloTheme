@@ -10,6 +10,17 @@
                         <div class="card-body">
                             <h1 class="card-title"><?php the_title(); ?></h1>
                             <p class="card-text"><?php the_content(); ?></p>
+                            <div class="share-icons">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>facebook
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>" target="_blank">
+                                    <i class="fab fa-twitter"></i>twitter
+                                </a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode(get_permalink()); ?>" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>linkedin
+                                </a>
+                            </div>
                         </div>
                     </div>
                 <?php endwhile;
@@ -19,5 +30,4 @@
         </div>
     </div>
 </div>
-
 <?php get_footer(); ?>
